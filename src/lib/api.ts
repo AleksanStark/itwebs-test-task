@@ -1,6 +1,7 @@
 export const SERVER_URL =
   "https://itwebs-test-task-server-production.up.railway.app";
-export const WSS_URL = "ws://itwebs-test-task-server-production.up.railway.app";
+export const WSS_URL =
+  "wss://itwebs-test-task-server-production.up.railway.app";
 
 export async function apiFetch<TBody, TResponse = unknown>(
   url: string,
