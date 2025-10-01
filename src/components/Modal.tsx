@@ -24,7 +24,7 @@ export default function Modal() {
 
     try {
       const response = await fetch(
-        "itwebs-test-task-server-production.up.railway.app/upload",
+        "https://itwebs-test-task-server-production.up.railway.app/upload",
         {
           method: "POST",
           body: formData,
