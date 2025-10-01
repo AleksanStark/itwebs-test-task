@@ -106,9 +106,15 @@ export default function Modal() {
               required
             />
 
-            <button className="text-black" type="submit" disabled={isLoading}>
-              {isLoading ? "Uploading..." : "Submit"}
-            </button>
+            <div className="flex justify-center">
+              <button
+                className=" text-white bg-black p-2 cursor-pointer"
+                type="submit"
+                disabled={isLoading}
+              >
+                {isLoading ? "Uploading..." : "Submit"}
+              </button>
+            </div>
 
             {error && <p style={{ color: "red" }}>{error}</p>}
           </form>
